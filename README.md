@@ -44,30 +44,36 @@ For each pair of letters:
 ---
 
 ## How to Run  
-
+- clone repository
+- go to cloned directory
 ```bash
-python playfair_cipher.py
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
 ```
 
 ## Example
+```text
 Enter Text: hellcraft
-
 Type Key: australia
+[1] Encryption
+[0] Decryption
+Mode: 1
+```
 
 KEY MATRIX
+```text
 A   U   S   T   R
 L   I/J B   C   D
 E   F   G   H   K
 M   N   O   P   Q
 V   W   X   Y   Z
+```
 
+```text
 Plain Text: HELLCRAFT
 Key: AUSTRALIA
 Pairs: [('h', 'e'), ('l', 'x'), ('l', 'c'), ('r', 'a'), ('f', 't')]
 Encrypted Text: UBNNQBBUPZ
-
-
-
-
-
-
+```
